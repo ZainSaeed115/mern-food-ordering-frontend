@@ -1,4 +1,4 @@
-import { CircleUserRound, Menu } from "lucide-react"
+import {  Menu } from "lucide-react"
 import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "./ui/sheet"
 import { Button } from "./ui/button"
 import { useAuth0 } from "@auth0/auth0-react"
@@ -7,7 +7,7 @@ import MobileNavLinks from "./MobileNavLinks"
 
 
 const MobileNav = () => {
-  const {loginWithRedirect,isAuthenticated,logout,user}=useAuth0()
+  const {loginWithRedirect,isAuthenticated,user}=useAuth0()
   return (
     <Sheet>
         <SheetTrigger>

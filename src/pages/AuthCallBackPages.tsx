@@ -1,13 +1,13 @@
 import { useAuth0 } from '@auth0/auth0-react'
-import React, { useEffect, useRef } from 'react'
-import {useCreateUserMutation} from "../api/userApiSlice"
+import  { useEffect, useRef } from 'react'
+
 import {useCreateMyUser} from "../api/MyUserApi"
 
 import { useNavigate } from 'react-router-dom';
 
 const AuthCallBackPages = () => {
     const {user}=useAuth0()
-    // const [createUser]=useCreateUserMutation()
+   
     const {createUser}=useCreateMyUser()
    
     const navigate=useNavigate();
